@@ -31,18 +31,19 @@ class HomeMenuController: UICollectionViewController {
     }
     
     private func stateController() {
-        viewModel.state.sink { state in
-            switch state {
-            case .success:
-                DispatchQueue.main.async {
+        viewModel
+            .state
+            .receive(on: RunLoop.main)
+            .sink { state in
+                switch state {
+                case .success:
                     self.collectionView.reloadData()
-            }
-            case .loading:
-                print("loading")
-            case .fail(error: let error):
-                print("error",error)
-            }
-        }.store(in: &cancellable)
+                case .loading:
+                    print("loading")
+                case .fail(error: let error):
+                    print("error",error)
+                }
+            }.store(in: &cancellable)
     }
     
     private func configUI() {
@@ -64,7 +65,7 @@ extension HomeMenuController {
         else { return UICollectionViewCell() }
         
         let viewModelCell = viewModel.getItemMenuViewModel(indexPath: indexPath)
-        cell.ConfingData(viewModel: viewModelCell)
+        cell.confingData(viewModel: viewModelCell)
         return cell
     }
     

@@ -36,14 +36,20 @@ final class HomeMenuViewModelImp: HomeMenuViewModel {
         state.send(.loading)
         Task {
             let result = await  loadMenuUseCase.execute()
-            switch result {
-            case .success(let menuItems):
-                self.menuItems = menuItems
-                state.send(.success)
-            case .failure(let error):
-                state.send(.fail(error: error.localizedDescription))
-            }
+            updateUI(result: result)
+            
         }
+    }
+    
+    private func updateUI(result: Result<[MenuItem], Error>) {
+        switch result {
+        case .success(let menuItems):
+            self.menuItems = menuItems
+            state.send(.success)
+        case .failure(let error):
+            state.send(.fail(error: error.localizedDescription))
+        }
+        
     }
     
     func getItemMenuViewModel(indexPath: IndexPath) -> ItemHomeMenuViewModel {

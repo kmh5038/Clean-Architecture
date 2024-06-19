@@ -7,6 +7,6 @@
 
 struct MenuRepositoryImp: MenuRepository {
     func fetchMenuData() async throws -> [MenuItem] {
-        [MenuItem(title: "categories", url: "nada")]
+        [MenuItem(title: "locations", url: "nada")]
     }
 }

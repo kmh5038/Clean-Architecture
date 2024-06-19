@@ -22,7 +22,7 @@ final class ItemHomeMenuCell: UICollectionViewCell {
     private let categoryMenuImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "default")
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -52,6 +52,8 @@ final class ItemHomeMenuCell: UICollectionViewCell {
         mainContainer.addSubview(categoryMenuImageView)
         categoryMenuImageView.fillSuperView()
         
+        configGradientFontTitle()
+        
         mainContainer.addSubview(titleCategoryLabel)
         titleCategoryLabel.setConstraints(right: mainContainer.rightAnchor,
                                           bottom: mainContainer.bottomAnchor,
@@ -59,7 +61,6 @@ final class ItemHomeMenuCell: UICollectionViewCell {
                                           pRight: 10,
                                           pBottom: 10,
                                           pLeft: 10)
-        configGradientFontTitle()
     }
     
     private func configGradientFontTitle() {
@@ -70,7 +71,7 @@ final class ItemHomeMenuCell: UICollectionViewCell {
         mainContainer.layer.addSublayer(gradientMaskLayer)
     }
     
-    func ConfingData(viewModel: ItemHomeMenuViewModel) {
+    func confingData(viewModel: ItemHomeMenuViewModel) {
         titleCategoryLabel.text = viewModel.title
         categoryMenuImageView.image = UIImage(named: viewModel.imageName)
     }
