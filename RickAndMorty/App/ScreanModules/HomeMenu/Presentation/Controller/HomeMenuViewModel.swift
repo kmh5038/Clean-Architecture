@@ -60,6 +60,4 @@ final class HomeMenuViewModelImp: HomeMenuViewModel {
     func getMenuItem(indexPath: IndexPath) -> MenuItem {
         menuItems[indexPath.row]
     }
-    
-    
 }

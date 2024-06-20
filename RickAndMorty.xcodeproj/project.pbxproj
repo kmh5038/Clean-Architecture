@@ -16,6 +16,14 @@
 		0444E8272BFCD00B00FB96FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E8262BFCD00B00FB96FD /* Coordinator.swift */; };
 		0444E82A2BFCD07300FB96FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E8292BFCD07300FB96FD /* AppCoordinator.swift */; };
 		0444E82C2BFCD0E700FB96FD /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E82B2BFCD0E700FB96FD /* AppFactory.swift */; };
+		047E71632C23BDED00D10A5A /* ApiClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71622C23BDED00D10A5A /* ApiClientService.swift */; };
+		047E71662C23BE6600D10A5A /* ApiClentServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71652C23BE6600D10A5A /* ApiClentServiceImp.swift */; };
+		047E71692C23BF9900D10A5A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71682C23BF9900D10A5A /* ApiError.swift */; };
+		047E716C2C23C34C00D10A5A /* HttpResoneseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E716B2C23C34C00D10A5A /* HttpResoneseStatus.swift */; };
+		047E716F2C23CDBB00D10A5A /* MenuDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E716E2C23CDBB00D10A5A /* MenuDTO.swift */; };
+		047E71712C23CEED00D10A5A /* MenuDTO+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71702C23CEED00D10A5A /* MenuDTO+Mapper.swift */; };
+		047E71732C23CF9800D10A5A /* PropertyIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71722C23CF9800D10A5A /* PropertyIterator.swift */; };
+		047E71752C23D52900D10A5A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71742C23D52900D10A5A /* EndPoint.swift */; };
 		0487D3752C228B0200818E87 /* ItemHomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D3742C228B0200818E87 /* ItemHomeMenuCell.swift */; };
 		0487D3772C228CFF00818E87 /* UIView+Contraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D3762C228CFF00818E87 /* UIView+Contraints.swift */; };
 		0487D3792C22901D00818E87 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487D3782C22901D00818E87 /* Reusable.swift */; };
@@ -61,6 +69,14 @@
 		0444E8262BFCD00B00FB96FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0444E8292BFCD07300FB96FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0444E82B2BFCD0E700FB96FD /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		047E71622C23BDED00D10A5A /* ApiClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientService.swift; sourceTree = "<group>"; };
+		047E71652C23BE6600D10A5A /* ApiClentServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClentServiceImp.swift; sourceTree = "<group>"; };
+		047E71682C23BF9900D10A5A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		047E716B2C23C34C00D10A5A /* HttpResoneseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResoneseStatus.swift; sourceTree = "<group>"; };
+		047E716E2C23CDBB00D10A5A /* MenuDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDTO.swift; sourceTree = "<group>"; };
+		047E71702C23CEED00D10A5A /* MenuDTO+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuDTO+Mapper.swift"; sourceTree = "<group>"; };
+		047E71722C23CF9800D10A5A /* PropertyIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyIterator.swift; sourceTree = "<group>"; };
+		047E71742C23D52900D10A5A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		0487D3742C228B0200818E87 /* ItemHomeMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHomeMenuCell.swift; sourceTree = "<group>"; };
 		0487D3762C228CFF00818E87 /* UIView+Contraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Contraints.swift"; sourceTree = "<group>"; };
 		0487D3782C22901D00818E87 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -192,6 +208,11 @@
 		0444E80A2BFCCB4100FB96FD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				047E716A2C23C33700D10A5A /* StatusResponse */,
+				047E71672C23BF8900D10A5A /* Errors */,
+				047E71642C23BE4E00D10A5A /* Implementations */,
+				047E71612C23BDCD00D10A5A /* ApiService */,
+				047E71742C23D52900D10A5A /* EndPoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -321,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				0487D3782C22901D00818E87 /* Reusable.swift */,
+				047E71722C23CF9800D10A5A /* PropertyIterator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -406,6 +428,47 @@
 			path = AppCoordinator;
 			sourceTree = "<group>";
 		};
+		047E71612C23BDCD00D10A5A /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				047E71622C23BDED00D10A5A /* ApiClientService.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		047E71642C23BE4E00D10A5A /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				047E71652C23BE6600D10A5A /* ApiClentServiceImp.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		047E71672C23BF8900D10A5A /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				047E71682C23BF9900D10A5A /* ApiError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		047E716A2C23C33700D10A5A /* StatusResponse */ = {
+			isa = PBXGroup;
+			children = (
+				047E716B2C23C34C00D10A5A /* HttpResoneseStatus.swift */,
+			);
+			path = StatusResponse;
+			sourceTree = "<group>";
+		};
+		047E716D2C23CDAC00D10A5A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				047E716E2C23CDBB00D10A5A /* MenuDTO.swift */,
+				047E71702C23CEED00D10A5A /* MenuDTO+Mapper.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		0487D37A2C22AA4F00818E87 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +481,7 @@
 		0487D37B2C22AA7300818E87 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				047E716D2C23CDAC00D10A5A /* DTO */,
 				0487D3832C22ABE500818E87 /* Repositories */,
 			);
 			path = Data;
@@ -613,12 +677,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047E71752C23D52900D10A5A /* EndPoint.swift in Sources */,
 				0487D3872C22B6F000818E87 /* LoadMenuUseCase.swift in Sources */,
 				0444E82C2BFCD0E700FB96FD /* AppFactory.swift in Sources */,
 				0487D3792C22901D00818E87 /* Reusable.swift in Sources */,
 				0487D3852C22ABFE00818E87 /* MenuRepositoryImp.swift in Sources */,
 				0444E8272BFCD00B00FB96FD /* Coordinator.swift in Sources */,
 				0444E7DB2BFC7A1E00FB96FD /* HomeMenuController.swift in Sources */,
+				047E71662C23BE6600D10A5A /* ApiClentServiceImp.swift in Sources */,
 				0487D37F2C22AAAC00818E87 /* MenuRepository.swift in Sources */,
 				0487D38E2C22C52B00818E87 /* StateController.swift in Sources */,
 				0487D3772C228CFF00818E87 /* UIView+Contraints.swift in Sources */,
@@ -626,11 +692,17 @@
 				0444E82A2BFCD07300FB96FD /* AppCoordinator.swift in Sources */,
 				0444E7D72BFC7A1E00FB96FD /* AppDelegate.swift in Sources */,
 				049B17EC2C105BAC00BEAA20 /* HomeFactory.swift in Sources */,
+				047E71692C23BF9900D10A5A /* ApiError.swift in Sources */,
+				047E716C2C23C34C00D10A5A /* HttpResoneseStatus.swift in Sources */,
 				0487D3902C22C62C00818E87 /* ItemHomeMenuViewModel.swift in Sources */,
+				047E71732C23CF9800D10A5A /* PropertyIterator.swift in Sources */,
 				0487D38C2C22C4A300818E87 /* HomeMenuViewModel.swift in Sources */,
 				049B17EA2C105B6100BEAA20 /* HomeCoordinator.swift in Sources */,
+				047E71712C23CEED00D10A5A /* MenuDTO+Mapper.swift in Sources */,
 				0487D3752C228B0200818E87 /* ItemHomeMenuCell.swift in Sources */,
 				0444E7D92BFC7A1E00FB96FD /* SceneDelegate.swift in Sources */,
+				047E71632C23BDED00D10A5A /* ApiClientService.swift in Sources */,
+				047E716F2C23CDBB00D10A5A /* MenuDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

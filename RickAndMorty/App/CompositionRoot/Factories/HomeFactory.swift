@@ -14,7 +14,9 @@ protocol HomeFactory {
 
 struct HomeFactoryImp: HomeFactory {
     func makeModule() -> UIViewController {
-        let menuRepository = MenuRepositoryImp()
+        let apiClientService = ApiClentServiceImp()
+        let urlList = EndPoint.baseUrl
+        let menuRepository = MenuRepositoryImp(apiClientService: apiClientService, urlList: urlList)
         let loadMenuUseCase = LoadMenuUseCaseImp(menuRepository: menuRepository)
         let state = PassthroughSubject<StateController, Never>()
         let homeMenuViewModel = HomeMenuViewModelImp(state: state, loadMenuUseCase: loadMenuUseCase)
