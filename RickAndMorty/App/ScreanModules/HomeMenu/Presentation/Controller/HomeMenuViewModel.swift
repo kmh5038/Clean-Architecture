@@ -35,7 +35,7 @@ final class HomeMenuViewModelImp: HomeMenuViewModel {
     func viewDidLoad() {
         state.send(.loading)
         Task {
-            let result = await  loadMenuUseCase.execute()
+            let result = await loadMenuUseCase.execute()
             updateUI(result: result)
             
         }

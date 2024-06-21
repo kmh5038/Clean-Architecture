@@ -16,6 +16,9 @@
 		0444E8272BFCD00B00FB96FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E8262BFCD00B00FB96FD /* Coordinator.swift */; };
 		0444E82A2BFCD07300FB96FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E8292BFCD07300FB96FD /* AppCoordinator.swift */; };
 		0444E82C2BFCD0E700FB96FD /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444E82B2BFCD0E700FB96FD /* AppFactory.swift */; };
+		044BC8E42C2546C500EEF26C /* SpinnerDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BC8E32C2546C500EEF26C /* SpinnerDisplayable.swift */; };
+		044BC8E62C25490100EEF26C /* ViewValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BC8E52C25490100EEF26C /* ViewValues.swift */; };
+		044BC8E82C2550A100EEF26C /* MessageDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BC8E72C2550A100EEF26C /* MessageDisplayable.swift */; };
 		047E71632C23BDED00D10A5A /* ApiClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71622C23BDED00D10A5A /* ApiClientService.swift */; };
 		047E71662C23BE6600D10A5A /* ApiClentServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71652C23BE6600D10A5A /* ApiClentServiceImp.swift */; };
 		047E71692C23BF9900D10A5A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047E71682C23BF9900D10A5A /* ApiError.swift */; };
@@ -69,6 +72,9 @@
 		0444E8262BFCD00B00FB96FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		0444E8292BFCD07300FB96FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0444E82B2BFCD0E700FB96FD /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		044BC8E32C2546C500EEF26C /* SpinnerDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerDisplayable.swift; sourceTree = "<group>"; };
+		044BC8E52C25490100EEF26C /* ViewValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewValues.swift; sourceTree = "<group>"; };
+		044BC8E72C2550A100EEF26C /* MessageDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDisplayable.swift; sourceTree = "<group>"; };
 		047E71622C23BDED00D10A5A /* ApiClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientService.swift; sourceTree = "<group>"; };
 		047E71652C23BE6600D10A5A /* ApiClentServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClentServiceImp.swift; sourceTree = "<group>"; };
 		047E71682C23BF9900D10A5A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -295,6 +301,7 @@
 		0444E8152BFCCC2200FB96FD /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				044BC8E52C25490100EEF26C /* ViewValues.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -302,6 +309,8 @@
 		0444E8162BFCCC2D00FB96FD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				044BC8E32C2546C500EEF26C /* SpinnerDisplayable.swift */,
+				044BC8E72C2550A100EEF26C /* MessageDisplayable.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -686,10 +695,12 @@
 				0444E7DB2BFC7A1E00FB96FD /* HomeMenuController.swift in Sources */,
 				047E71662C23BE6600D10A5A /* ApiClentServiceImp.swift in Sources */,
 				0487D37F2C22AAAC00818E87 /* MenuRepository.swift in Sources */,
+				044BC8E42C2546C500EEF26C /* SpinnerDisplayable.swift in Sources */,
 				0487D38E2C22C52B00818E87 /* StateController.swift in Sources */,
 				0487D3772C228CFF00818E87 /* UIView+Contraints.swift in Sources */,
 				0487D3822C22AB3000818E87 /* MenuItem.swift in Sources */,
 				0444E82A2BFCD07300FB96FD /* AppCoordinator.swift in Sources */,
+				044BC8E62C25490100EEF26C /* ViewValues.swift in Sources */,
 				0444E7D72BFC7A1E00FB96FD /* AppDelegate.swift in Sources */,
 				049B17EC2C105BAC00BEAA20 /* HomeFactory.swift in Sources */,
 				047E71692C23BF9900D10A5A /* ApiError.swift in Sources */,
@@ -703,6 +714,7 @@
 				0444E7D92BFC7A1E00FB96FD /* SceneDelegate.swift in Sources */,
 				047E71632C23BDED00D10A5A /* ApiClientService.swift in Sources */,
 				047E716F2C23CDBB00D10A5A /* MenuDTO.swift in Sources */,
+				044BC8E82C2550A100EEF26C /* MessageDisplayable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
